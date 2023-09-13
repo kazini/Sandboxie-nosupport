@@ -94,7 +94,7 @@ SB_PROGRESS COnlineUpdater::GetUpdates(QObject* receiver, const char* member, co
 	Query.addQueryItem("system", "windows-" + QSysInfo::kernelVersion() + "-" + QSysInfo::currentCpuArchitecture());
 	Query.addQueryItem("language", QLocale::system().name());
 
-	QString UpdateKey = ""; // GetArguments(g_Certificate, L'\n', L':').value("UPDATEKEY"); // NOSUPPORT
+	QString UpdateKey = ""; // GetArguments(g_Certificate, L'\n', L':').value("UPDATEKEY"); // NOSUPPORT _
 	//if (UpdateKey.isEmpty())
 	//	UpdateKey = theAPI->GetGlobalSettings()->GetText("UpdateKey"); // theConf->GetString("Options/UpdateKey");
 	//if (UpdateKey.isEmpty())
